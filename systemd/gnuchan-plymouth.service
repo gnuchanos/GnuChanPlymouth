@@ -1,0 +1,8 @@
+[Unit]
+Description=GnuChanPlymouth boot animation
+After=systemd-modules-load.service gnuchan-gpu-select.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/GnuChanPlymouth
+TimeoutStartSec=15
